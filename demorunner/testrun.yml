@@ -1,0 +1,16 @@
+name: Test RunnerX
+
+on: [push]
+
+jobs:
+  test-runner:
+    runs-on: [runnerx]   # must match your self-hosted runner label
+    steps:
+      - name: Say Hello
+        run: echo "RunnerX is working!"
+
+      - name: Show whoami
+        run: whoami
+
+      - name: Show current directory
+        run: pwd
